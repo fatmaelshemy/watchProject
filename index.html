@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="ar">
+<!-- <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watches Project</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="DGShamael-Regular.ttf">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/home.css">
+</head> -->
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&family=Italianno&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/fontawesome.min.css"
+        integrity="sha512-d0olNN35C6VLiulAobxYHZiXJmq+vl+BGIgAxQtD5+kqudro/xNMvv2yIHAciGHpExsIbKX3iLg+0B6d0k4+ZA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="css/style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0L0eP6T/vLwvk5xkpL/ScXMf3bV3Kq2x3uPVI5u56igrHgS5USprQ0DJpiykm+C" crossorigin="anonymous">
+
+  
+  
+    <!--  Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+<!-- ******************* -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Aref+Ruqaa:wght@400;700&family=Italianno&family=Lalezar&family=Noto+Kufi+Arabic:wght@100..900&display=swap" rel="stylesheet">
+
+  <!-- <link href="theme.css" rel="stylesheet" type="text/css" media="screen"> -->
+
+    <link href="css/home.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    
+    <style>
+      .swiper-container {
+        width: calc(100% - 40px); /* Adjusting for the padding */
+        height: 100%;
+        overflow: hidden; /* Hide overflow */
+        padding: 20px; /* Add padding to avoid overflow */
+      }
+      .swiper-wrapper {
+        display: flex; /* Use flexbox to arrange slides */
+      }
+      .swiper-slide {
+        flex: 0 0 calc((100% - 40px) / 3); /* Set width for each slide */
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        padding: 20px;
+      }
+      .swiper-button-prev,
+      .swiper-button-next {
+        color: #fff;
+        font-size: 5px;
+        background-color: #BED1CF;
+        padding: 3px 15px;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        display: none; /* Initially hide arrows */
+      }
+      .swiper-container:hover .swiper-button-prev,
+      .swiper-container:hover .swiper-button-next {
+        display: block; /* Show arrows on hover */
+      }
+      /* Animation to delay hiding arrows after mouse leaves the swiper container */
+      .swiper-button-prev,
+      .swiper-button-next {
+        transition: opacity 0.5s ease-in-out;
+      }
+      .swiper-container:not(:hover) .swiper-button-prev,
+      .swiper-container:not(:hover) .swiper-button-next {
+        transition-delay: 0.5s; /* Delay hiding arrows after mouse leaves */
+        opacity: 0; /* Hide arrows after delay */
+      }
+    </style>
+
+</head>
+<body>
+    <div class="container-fluid bg-dark px-5 d-none d-lg-block">
+        <div class="row gx-0">
+            <div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
+                <div class="d-inline-flex align-items-center" style="height: 45px;">
+                    <small class="me-3 text-light"><i class="fa fa-map-marker-alt me-2"></i>123 Street, New York,
+                        USA</small>
+                    <small class="me-3 text-light"><i class="fa fa-phone-alt me-2"></i>+012 345 6789</small>
+                    <small class="text-light"><i class="fa fa-envelope-open me-2"></i>info@example.com</small>
+                </div>
+            </div>
+            <div class="col-lg-4 text-center text-lg-end">
+                <div class="d-inline-flex align-items-center" style="height: 45px;">
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i
+                            class="fab fa-twitter fw-normal"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i
+                            class="fab fa-facebook-f fw-normal"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i
+                            class="fab fa-linkedin-in fw-normal"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i
+                            class="fab fa-instagram fw-normal"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle" href=""><i
+                            class="fab fa-youtube fw-normal"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+       <!-- Navbar  -->
+       <nav id="main-nav" class="navbar navbar-expand-lg navbar-dark sticky-top  bg-white p-0">
+        <div class="container position-relative">
+            <a href="" class="navbar-brand p-0 ">
+                <img src="images/logo.jpg" alt="Logo" class="img-fluid me-3 rounded-circle" height="90" width="90" />
+            </a>
+            <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <!-- <span class="navbar-toggler-icon"></span> -->
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto">
+                    <a href="#sec4" class="nav-item nav-link p-3">اراء العملاء </a>
+                   
+                    <a  href="Watches.html" class="nav-item nav-link p-3">الساعات</a>
+                    <a href="#sec3" class="nav-item nav-link p-3">الاكثر مبيعا</a>
+                    <a href="index.html" class="nav-item nav-link active p-3">الصفحه الرئيسيه</a>
+                   
+                </div>
+                <a href="login.html" class="btn  rounded-pill py-2 px-4 ms-lg-3 p-3">تسجيل الدخول</a>
+            </div>
+        </div>
+    </nav>
+      <!--   Start slider  -->
+      <div id="slides-collection">
+
+        <div class="slide">
+          <div class="left-half" style="background-image:url(images/w10\ \(4\).jpg);">
+            <div class="slide-content">
+                <h2>اي منتج 127 ريال </h2>
+                <p>نحتفل بأصالتنا ونعتز بتاريخنا</p>
+            </div>
+          </div>
+          <div class="right-half" style="background-image: url(images/w10\ \(5\).jpg);">
+            <div class="slide-content">
+                <h2>شحن مجاني فوق 250 ريال</h2>
+                <p>تشكيله من افخم ماركات الساعات </p>
+            </div>
+          </div>
+        </div>
+    
+        <div class="slide">
+          <div class="left-half" style="background-image: url(images/w10\ \(6\).jpg);">
+            <div class="slide-content">
+                <h2>اي منتج 127 ريال </h2>
+              <p>نحتفل بأصالتنا ونعتز بتاريخنا</p>
+            </div>
+          </div>
+          <div class="right-half" style="background-image: url(images/w10\ \(8\).jpg);">
+            <div class="slide-content">
+                <h2>شحن مجاني فوق 250 ريال</h2>
+              <p>تشكيله من افخم ماركات الساعات </p>
+            </div>
+          </div>
+        </div>
+    
+        <div class="slide">
+          <div class="left-half" style="background-image: url(images/w10\ \(3\).jpg);">
+            <div class="slide-content">
+                <h2>اي منتج 127 ريال </h2>
+                <p>نحتفل بأصالتنا ونعتز بتاريخنا</p>
+            </div>
+          </div>
+          <div class="right-half" style="background-image: url(images/w8.jpg);">
+            <div class="slide-content">
+                <h2>شحن مجاني فوق 250 ريال</h2>
+                <p>تشكيله من افخم ماركات الساعات </p>
+            </div>
+          </div>
+        </div>
+    
+        <div class="slide">
+          <div class="left-half" style="background-image: url(images/w7.jpg);">
+            <div class="slide-content" >
+                <h2>اي منتج 127 ريال </h2>
+              <p>نحتفل بأصالتنا ونعتز بتاريخنا</p>
+            </div>
+          </div>
+          <div class="right-half" style="background-image: url(images/w10\ \(2\).jpg);">
+            <div class="slide-content">
+                <h2>شحن مجاني فوق 250 ريال</h2>
+              <p>تشكيله من افخم ماركات الساعات </p>
+            </div>
+          </div>
+        </div>
+    
+        <!-- <div id="nav">
+            <a href="#" class="next-slide">Next Slide</a>
+            <a href="#" class="prev-slide">Prev Slide</a>
+          </div> -->
+    
+      </div>
+    
+    
+
+    <!-- If you don't see it u probably are using a browser not based on webkit, so leave IE and grab anything else (Y) -->
+<!-- UPDATE: works in Chrome & Safari, not Firefox. To solve that you could use an SVG insted of pure text. -->
+
+<div class="container2">
+    <div class="title">التميز في كل شئ </div>
+    <div class="subtitle">نحتفل  بأصالتنا ونعتز بتاريخنا  </div>
+  </div>
+<br>
+  <div class="container d-flex justify-content-between text-center">
+    <div class="left position-relative">
+        <img src="images/w3.jpg" alt="" style="width: 90%; height: 400px;">
+       <img src="images/w10 (3).jpg" alt="" class="none" style="height: 300px;width: 60%; position: absolute; top: 120px;left: 400px; ">
+    </div>
+    <div class="right aref-ruqaa-regular" >
+      <h1>اكتشف ما يناسبك </h1>
+      <br>
+      <h1>اجذب الانتباه باطلالتك الرائعه</h1>
+      <br>
+      <h3>جميع منتجاتنا نوفرها لك باعلي جوده وفخامه</h3>
+    </div>
+  </div>
+
+  
+  <div class="container " id="sec3">
+    <div class="title mt-5"> الاكثر مبيعا</div>
+    <div class="subtitle">نحتفل  بأصالتنا ونعتز بتاريخنا  </div>
+  </div>
+
+
+
+    <div class="swiper-container container5">
+        <div class="row" id="productCards">
+      <div class="swiper-wrapper col-md-4  " >
+         <!-- JavaScript will generate the product cards here  -->
+      </div>
+      <!-- Navigation arrows -->
+       <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+</div>
+
+<div class="d-grid gap-2 col-6 mx-auto text-center">
+  <a href="Watches.html">
+  <button class="btn " type="button" style="background-color: #E78895; color: white;">عرض الكل </button>
+</a>
+</div>
+
+  
+       
+  <div class="container " id="sec4">
+    <div class="title mt-5"> اراء العملاء</div>
+    <div class="subtitle">نحتفل  بأصالتنا ونعتز بتاريخنا  </div>
+    
+  </div>
+<br>
+  <div class=" container3">
+    <div class="row " >
+        <div class="col-lg-4">
+            <div class="card">
+                <div class="face front-face">
+                    <img src="https://images.unsplash.com/photo-1557862921-37829c790f19?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1051&q=80"
+                        alt="" class="profile">
+                    <div class="pt-3 text-uppercase name">
+                        فارس الحربي 
+                    </div>
+                    <div class="radio-input">
+                        <input
+                          class="star s1"
+                          type="radio"
+                          id="value-1"
+                          name="value-radio"
+                          value="value-1"
+                        />
+                        <input
+                          class="star s2"
+                          type="radio"
+                          id="value-2"
+                          name="value-radio"
+                          value="value-2"
+                        />
+                        <input
+                          class="star s3"
+                          type="radio"
+                          id="value-3"
+                          name="value-radio"
+                          value="value-3"
+                        />
+                        <input
+                          class="star s4"
+                          type="radio"
+                          id="value-4"
+                          name="value-radio"
+                          value="value-4"
+                        />
+                        <input
+                          class="star s5"
+                          type="radio"
+                          id="value-5"
+                          name="value-radio"
+                          value="value-5"
+                        />
+                      </div>
+                      
+                </div>
+                <div class="face back-face">
+                    <span class="fas fa-quote-left"></span>
+                    <div class="testimonial">
+                       
+ششكككرراً مررره في التعامل وفي التواصل وفي الأخلاق والقيم العالية شكرًا للموظف #محمد والله رقّه في التعامل والله الموقع يستاهل مليون نجمة ومحمد مليون شكرا ومليون نجمه 🤍🤍🤍🙏
+                    </div>
+                    <span class="fas fa-quote-right"></span>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="card">
+                <div class="face front-face">
+                    <img src="https://images.unsplash.com/photo-1600486913747-55e5470d6f40?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+                        alt="" class="profile">
+                    <div class="pt-3 text-uppercase name">
+                        محمد فايز
+                    </div>
+                    <div class="radio-input">
+                        <input
+                          class="star s1"
+                          type="radio"
+                          id="value-1"
+                          name="value-radio"
+                          value="value-1"
+                        />
+                        <input
+                          class="star s2"
+                          type="radio"
+                          id="value-2"
+                          name="value-radio"
+                          value="value-2"
+                        />
+                        <input
+                          class="star s3"
+                          type="radio"
+                          id="value-3"
+                          name="value-radio"
+                          value="value-3"
+                        />
+                        <input
+                          class="star s4"
+                          type="radio"
+                          id="value-4"
+                          name="value-radio"
+                          value="value-4"
+                        />
+                        <input
+                          class="star s5"
+                          type="radio"
+                          id="value-5"
+                          name="value-radio"
+                          value="value-5"
+                        />
+                      </div>
+                </div>
+                <div class="face back-face">
+                    <span class="fas fa-quote-left"></span>
+                    <div class="testimonial">
+                      
+طلب ساعه ومعاها وحده هديه وربي فخمههه مرررا وتجنن واحلى من الصوره الله يسعدهم روحهم طيبه والتوصيل ما طول وكل شي حلو الله يسعدهم يارب🤍🤍🤍😍
+                    </div>
+                    <span class="fas fa-quote-right"></span>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="card">
+                <div class="face front-face">
+                    <img src="https://images.unsplash.com/photo-1614574762522-6ac2fbba2208?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MjY2fHxtYW58ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                        alt="" class="profile">
+                    <div class="pt-3 text-uppercase name">
+                       يحيي مازن
+                    </div>
+                    <div class="radio-input">
+                        <input
+                          class="star s1"
+                          type="radio"
+                          id="value-1"
+                          name="value-radio"
+                          value="value-1"
+                        />
+                        <input
+                          class="star s2"
+                          type="radio"
+                          id="value-2"
+                          name="value-radio"
+                          value="value-2"
+                        />
+                        <input
+                          class="star s3"
+                          type="radio"
+                          id="value-3"
+                          name="value-radio"
+                          value="value-3"
+                        />
+                        <input
+                          class="star s4"
+                          type="radio"
+                          id="value-4"
+                          name="value-radio"
+                          value="value-4"
+                        />
+                        <input
+                          class="star s5"
+                          type="radio"
+                          id="value-5"
+                          name="value-radio"
+                          value="value-5"
+                        />
+                      </div>
+                  
+                </div>
+                <div class="face back-face">
+                    <span class="fas fa-quote-left"></span>
+                    <div class="testimonial">
+                        الساعات تجنن انصح بشرائها واسعارها مرة مناسبة وكمان العلب فخمة تصلح تهدوها لأحبائكم ،، والعطورات حقهم مرررة حلوة وثبات عالي ،، بشكل عام المتجر مرة كويس وخدمة ممتازة شكرا لكم ❤☺👋
+                    </div>
+                    <span class="fas fa-quote-right"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<br><br>
+<div class="container">
+    <div class="row  g-4">
+        <div class="col-md-4 col-lg-3 col-sm-6 col-xs-12">
+          <div class="card1">
+            
+            <div class="card-body">
+                <i class="fa-solid fa-truck-fast" style="font-size: 30px;"></i>
+                <br><br><br>
+              <h5 class="card-title">الشحن</h5>
+              <br>
+              <p class="card-text">نحرص على أن يصلك طلبك بأقصى سرعة ✔
+            </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-lg-3 col-sm-6 col-xs-12">
+          <div class="card1">
+          
+            <div class="card-body">
+                <i class="fa-solid fa-ranking-star" style="font-size: 30px;"></i>
+                <br> <br><br>
+              <h5 class="card-title"> الجودة العالية</h5>
+              <br>
+              <p class="card-text">
+                جميع منتجاتنا نوفرها لك بأعلى جودة وفخامة ✔</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-lg-3 col-sm-6 col-xs-12">
+          <div class="card1">
+            
+            
+            <div class="card-body">
+                <i class="fa-solid fa-money-check-dollar" style="font-size: 30px;"></i>
+                <br> <br><br>
+              <h5 class="card-title">الأسعار</h5>
+              <br>
+              <p class="card-text">عروض وتخفيضات مستمرة ✔</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-lg-3 col-sm-6 col-xs-12">
+          <div class="card1">
+            <div class="card-body">
+                <i class="fa-solid fa-phone" style="font-size: 30px;"></i>
+                <br><br><br>
+              <h5 class="card-title"> الدعم الفني</h5>
+              <br>
+              <p class="card-text">دعم فني جاهز للرد والمساعدة ✔</p>
+            </div>
+          </div>
+        </div>
+      </div>
+</div>
+<br><br><br>
+<!-- footer -->
+
+<div class="page-wrapper">
+    <div id="waterdrop"></div>
+    <footer>
+      <div class="footer-top">
+        <div class="pt-exebar">
+
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-12 col-sm-12 footer-col-3">
+                <div class="widget widget_gallery gallery-grid-4">
+                    <h5 class="footer-title">Our Gallery</h5>
+                    <ul class="magnific-image">
+    
+                      <li><a class="magnific-anchor"><img src="images/wa (1).jpeg" alt=""></a></li>
+                      <li><a class="magnific-anchor"><img src="images/wa (11).jpeg" alt=""></a></li>
+                      <li><a class="magnific-anchor"><img src="images/wa (3).jpeg" alt=""></a></li>
+                      <li><a class="magnific-anchor"><img src="images/wa (12).jpeg" alt=""></a></li>
+                      <li><a class="magnific-anchor"><img src="images/wa (5).jpeg" alt=""></a></li>
+                      <li><a class="magnific-anchor"><img src="images/wa (6).jpeg" alt=""></a></li>
+                      <li><a class="magnific-anchor"><img src="images/wa (7).jpeg" alt=""></a></li>
+                      <li><a class="magnific-anchor"><img src="images/wa (8).jpeg" alt=""></a></li>
+                      <li><a class="magnific-anchor"><img src="images/wa (9).jpeg" alt=""></a></li>
+                    
+                    </ul>
+                  </div>
+
+            </div>
+            <div class="col-12 col-lg-6 col-md-6 col-sm-12">
+              <div class="row">
+                <div class="col-6 col-lg-6 col-md-6 col-sm-6">
+                  <div class="widget footer_widget">
+                    <h5 class="footer-title">Recent News</h5>
+                    <ul class="posts  styled">
+                      <li class="clearfix gem-pp-posts">
+                        <div class="gem-pp-posts-text">
+                          <div class="gem-pp-posts-item">
+                            <a href="#">Want to start Your Own Play School.
+                            </a>
+                          </div>
+                          <div class="gem-pp-posts-date">Call +967774254881</div>
+                        </div>
+                      </li>
+                      <li class="clearfix gem-pp-posts">
+                        <div class="gem-pp-posts-text">
+                          <div class="gem-pp-posts-item">
+                            <a href="#">Now we are in Faridabad,Now we are in DaudNagar.
+                            </a>
+                          </div>
+                          <div class="gem-pp-posts-date">Call +967774254881</div>
+                        </div>
+                      </li>
+                      <li class="clearfix gem-pp-posts">
+                        <div class="gem-pp-posts-text">
+                          <div class="gem-pp-posts-item">
+                            <a href="">Now we are in Ranchi, Admission open
+                            </a>
+                          </div>
+                          <div class="gem-pp-posts-date">Call +967774254881</div>
+                        </div>
+                      </li>
+
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-6 col-lg-6 col-md-6 col-sm-6">
+                  <div class="widget">
+                    <h5 class="footer-title">Email Us</h5>
+                    <div class="textwidget">
+                      <div role="form" class="wpcf7" id="wpcf7-f4-o1" lang="en-US" dir="ltr">
+
+                        <form method="post" class="wpcf7-form" novalidate="novalidate">
+
+                          <div class="contact-form-footer">
+                            <p><span class="wpcf7-form-control-wrap your-first-name"><input type="text" name="your-first-name" value="" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false" placeholder="Your name"></span></p>
+                            <p><span class="wpcf7-form-control-wrap your-email_1"><input type="email" name="your-email_1" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-email" aria-invalid="false" placeholder="Your email"></span></p>
+                            <p><span class="wpcf7-form-control-wrap your-message"><textarea name="your-message" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea" aria-invalid="false" placeholder="Your message"></textarea></span></p>
+                            <div><input type="submit" value="Send" class="wpcf7-form-control wpcf7-submit"><span class="ajax-loader"></span></div>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-3 col-md-5 col-sm-12 footer-col-4">
+              <div class="widget widget_gallery gallery-grid-4">
+                <h5 class="footer-title">Our Gallery</h5>
+                <ul class="magnific-image">
+
+                    <li><a class="magnific-anchor"><img src="images/wa (13).jpeg" alt=""></a></li>
+                    <li><a class="magnific-anchor"><img src="images/wa (14).jpeg" alt=""></a></li>
+                    <li><a class="magnific-anchor"><img src="images/wa (15).jpeg" alt=""></a></li>
+                    <li><a class="magnific-anchor"><img src="images/wa (16).jpeg" alt=""></a></li>
+                    <li><a class="magnific-anchor"><img src="images/wa (17).jpeg" alt=""></a></li>
+                    <li><a class="magnific-anchor"><img src="images/wa (22).jpeg" alt=""></a></li>
+                    <li><a class="magnific-anchor"><img src="images/wa (19).jpeg" alt=""></a></li>
+                    <li><a class="magnific-anchor"><img src="images/wa (23).jpeg" alt=""></a></li>
+                    <li><a class="magnific-anchor"><img src="images/wa (24).jpeg" alt=""></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+     
+    </footer>
+  </div>
+
+
+   <!-- arrow_up -->
+   <a class="btn arrow_up">
+    <i class="fa fa-arrow-up fa-2x"></i>
+</a>
+
+
+<a class="btn watsapp" onclick="openWhatsApp()">
+  <i class="fa-brands fa-whatsapp"></i>
+</a>
+<!-- arrow_up -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  <script src="https://daniellaharel.com/raindrops/js/raindrops.js"></script>
+
+ <script> jQuery('#waterdrop').raindrops({color:'#1c1f2f', canvasHeight:150, density: 0.1, frequency: 20});
+</script>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+  
+
+
+ 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-2O4K9eHfPzvXv0PzrDyU+ad5zX7gg8hPv5bfbPv4Rt17zFCebzFz0nSmedTz28nx" crossorigin="anonymous"></script>
+
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 3,
+      spaceBetween: 20,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
+  <script>
+
+
+
+  
+$(document).ready(function() {
+  $("#slides-collection").crossslider({
+    containerWidth: 1170
+  });
+
+  // Function to trigger slideNext every 3 seconds
+  function slideNext() {
+    var el = $(".active");
+    if (el.next(".slide").length > 0) {
+      el.removeClass("active");
+      el.next(".slide").addClass("active");
+    } else {
+      $(".slide").removeClass("active");
+      $(".slide").first().addClass("active");
+    }
+    slideIn();
+  }
+
+  setInterval(slideNext, 3000); // Adjust the interval as needed
+
+  // Function to animate slide in
+  function slideIn() {
+    var activeSlide = $(".active");
+    var leftHalf = activeSlide.find(".left-half");
+    var rightHalf = activeSlide.find(".right-half");
+
+    leftHalf.animate({
+      left: "0%"
+    }, 3000);
+    rightHalf.animate({
+      right: "0%"
+    }, 3000);
+  }
+});
+
+
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,54 @@
+*{
+    padding: 0;
+    margin: 0;
+  }
+  
+  body{
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  #login h1{
+    font-size: 28px;
+    font-weight: 700;
+    color: #E78895;
+  }
+  
+  #login label{
+    font-size: 15px;
+  }
+  
+  #login a{
+    color: #E78895;
+  }
+  
+  #login a:hover{
+    cursor: pointer;
+  }
+
+  #login .form-control{
+    border-radius: 12px;
+  }
+
+  .create-one{
+    font-size: 14px;
+    text-align: center;
+    color: #E78895;
+  }
+  .btn-login{
+    width: 100%;
+    border-radius: 30px;
+    --bs-btn-padding-x: 0.75rem;
+    --bs-btn-padding-y: 1rem;
+    --bs-btn-font-size: .875rem;
+    --bs-btn-color: #fff;  
+    --bs-btn-bg:  #E78895; 
+    --bs-btn-border-color: #E78895;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #E78895;
+    --bs-btn-hover-border-color: #E78895;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #E78895;
+    --bs-btn-active-border-color: #E78895;
+  }
+  
+ 

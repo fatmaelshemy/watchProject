@@ -1,0 +1,1393 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- <link rel="stylesheet" href="addtocart.css"> -->
+    <script src="https://kit.fontawesome.com/92d70a2fd8.js" crossorigin="anonymous"></script>
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&family=Italianno&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/fontawesome.min.css"
+        integrity="sha512-d0olNN35C6VLiulAobxYHZiXJmq+vl+BGIgAxQtD5+kqudro/xNMvv2yIHAciGHpExsIbKX3iLg+0B6d0k4+ZA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="css/style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0L0eP6T/vLwvk5xkpL/ScXMf3bV3Kq2x3uPVI5u56igrHgS5USprQ0DJpiykm+C" crossorigin="anonymous">
+
+
+<!-- ******************* -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Aref+Ruqaa:wght@400;700&family=Italianno&family=Lalezar&family=Noto+Kufi+Arabic:wght@100..900&display=swap" rel="stylesheet">
+
+  <!-- <link href="theme.css" rel="stylesheet" type="text/css" media="screen"> -->
+
+    <link href="css/home.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    
+    <style>
+      .swiper-container {
+        width: calc(100% - 40px); /* Adjusting for the padding */
+        height: 100%;
+        overflow: hidden; /* Hide overflow */
+        padding: 20px; /* Add padding to avoid overflow */
+      }
+      .swiper-wrapper {
+        display: flex; /* Use flexbox to arrange slides */
+      }
+      .swiper-slide {
+        flex: 0 0 calc((100% - 40px) / 3); /* Set width for each slide */
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        padding: 20px;
+      }
+      .swiper-button-prev,
+      .swiper-button-next {
+        color: #fff;
+        font-size: 5px;
+        background-color: #BED1CF;
+        padding: 3px 15px;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        display: none; /* Initially hide arrows */
+      }
+      .swiper-container:hover .swiper-button-prev,
+      .swiper-container:hover .swiper-button-next {
+        display: block; /* Show arrows on hover */
+      }
+      /* Animation to delay hiding arrows after mouse leaves the swiper container */
+      .swiper-button-prev,
+      .swiper-button-next {
+        transition: opacity 0.5s ease-in-out;
+      }
+      .swiper-container:not(:hover) .swiper-button-prev,
+      .swiper-container:not(:hover) .swiper-button-next {
+        transition-delay: 0.5s; /* Delay hiding arrows after mouse leaves */
+        opacity: 0; /* Hide arrows after delay */
+      }
+    </style>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'poppins', sans-serif;
+            font-size: 18px;
+        }
+
+        body {
+            display: flex;
+           
+            flex-direction: column;
+        }
+
+        .header {
+            height: 80px;
+            width: 100%;
+            background-color: #E78895;
+            border-radius: 3px;
+            margin: 30px 0px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px;
+        }
+
+        .header .logo {
+            font-size: 30px;
+            font-weight: bold;
+            color: white;
+        }
+
+        .cart {
+            display: flex;
+            background-color: white;
+            justify-content: space-between;
+            align-items: center;
+            padding: 7px 10px;
+            border-radius: 3px;
+            width: 80px;
+        }
+
+        .fa-solid {
+            color: #E78895;
+        }
+
+        .cart p {
+            height: 22px;
+            width: 22px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 22px;
+            background-color: #E78895;
+            color: white;
+        }
+
+        .container8 {
+            display: flex;
+            width: 70%;
+            margin-bottom: 30px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #root {
+            width: 60%;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 20px;
+        }
+
+        .sidebar {
+            width: 40%;
+            border-radius: 5px;
+            background-color: #eee;
+            margin-left: 20px;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .head {
+            background-color: #E78895;
+            border-radius: 3px;
+            height: 50px;
+            padding: 10px;
+           
+            color: white;
+            display: flex;
+            
+            text-align: center;
+        }
+
+        .foot {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px 0px;
+            padding: 10px 0px;
+            border-top: 1px solid #333;
+        }
+
+        .box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            border: 1px solid #E78895;
+            border-radius: 5px;
+            padding: 15px;
+        }
+
+        .img-box {
+            width: 100%;
+            height: 180px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .images {
+            max-width: 90%;
+            max-height: 90%;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        .bottom {
+            margin-top: 20px;
+            width: 100%;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            height: 110px;
+        }
+
+        h2 {
+            font-size: 20px;
+            color: red;
+        }
+
+        button {
+            width: 100%;
+            position: relative;
+            border: none;
+            border-radius: 5px;
+            background-color: #E78895;
+            padding: 7px 25px;
+            cursor: pointer;
+            color: white;
+        }
+
+        button:hover {
+            background-color: #333;
+        }
+
+        .cart-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px;
+            background-color: white;
+            border-bottom: 1px solid #aaa;
+            border-radius: 3px;
+            margin: 10px 10px;
+        }
+
+        .row-img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50px;
+            border: 1px solid #E78895;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .rowimg {
+            max-width: 43px;
+            max-height: 43px;
+            border-radius: 50%;
+        }
+
+        .fa-trash:hover {
+            cursor: pointer;
+            color: #333;
+        }
+
+        .btnpay {
+            width: 100%;
+            position: relative;
+            border: none;
+            border-radius: 5px;
+            background-color: #E78895;
+            padding: 7px 25px;
+            cursor: pointer;
+            color: white;
+            text-decoration: none;
+        }
+
+        .btnpay:hover {
+            background-color: black;
+        }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <p class="logo">Add to Cart</p>
+            <div class="cart"><i class="fa-solid fa-cart-shopping"></i><p id="count">0</p></div>
+        </div>
+        <div class="container8 container">
+            <div id="root"></div>
+            <div class="sidebar">
+                <div class="head"><p>My Cart</p></div>
+                <div id="cartItem">السله فارغه</div>
+                <div class="foot">
+                    <h3>Total</h3>
+                    <h2 id="total">$ 0.00</h2>
+                    
+                </div>
+                <a class="btnpay" onclick="openWhatsApp()">اشتري الان </a>
+            </div>
+        </div>
+    
+
+        <div class="container " id="sec4">
+            <div class="title mt-5"> اراء العملاء</div>
+            <div class="subtitle">نحتفل  بأصالتنا ونعتز بتاريخنا  </div>
+            
+          </div>
+        <br>
+          <div class=" container3">
+            <div class="row " >
+                <div class="col-lg-4">
+                    <div class="card">
+                        <div class="face front-face">
+                            <img src="https://images.unsplash.com/photo-1557862921-37829c790f19?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1051&q=80"
+                                alt="" class="profile">
+                            <div class="pt-3 text-uppercase name">
+                                فارس الحربي 
+                            </div>
+                            <div class="radio-input">
+                                <input
+                                  class="star s1"
+                                  type="radio"
+                                  id="value-1"
+                                  name="value-radio"
+                                  value="value-1"
+                                />
+                                <input
+                                  class="star s2"
+                                  type="radio"
+                                  id="value-2"
+                                  name="value-radio"
+                                  value="value-2"
+                                />
+                                <input
+                                  class="star s3"
+                                  type="radio"
+                                  id="value-3"
+                                  name="value-radio"
+                                  value="value-3"
+                                />
+                                <input
+                                  class="star s4"
+                                  type="radio"
+                                  id="value-4"
+                                  name="value-radio"
+                                  value="value-4"
+                                />
+                                <input
+                                  class="star s5"
+                                  type="radio"
+                                  id="value-5"
+                                  name="value-radio"
+                                  value="value-5"
+                                />
+                              </div>
+                              
+                        </div>
+                        <div class="face back-face">
+                            <span class="fas fa-quote-left"></span>
+                            <div class="testimonial">
+                               
+        ششكككرراً مررره في التعامل وفي التواصل وفي الأخلاق والقيم العالية شكرًا للموظف #محمد والله رقّه في التعامل والله الموقع يستاهل مليون نجمة ومحمد مليون شكرا ومليون نجمه 🤍🤍🤍🙏
+                            </div>
+                            <span class="fas fa-quote-right"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card">
+                        <div class="face front-face">
+                            <img src="https://images.unsplash.com/photo-1600486913747-55e5470d6f40?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+                                alt="" class="profile">
+                            <div class="pt-3 text-uppercase name">
+                                محمد فايز
+                            </div>
+                            <div class="radio-input">
+                                <input
+                                  class="star s1"
+                                  type="radio"
+                                  id="value-1"
+                                  name="value-radio"
+                                  value="value-1"
+                                />
+                                <input
+                                  class="star s2"
+                                  type="radio"
+                                  id="value-2"
+                                  name="value-radio"
+                                  value="value-2"
+                                />
+                                <input
+                                  class="star s3"
+                                  type="radio"
+                                  id="value-3"
+                                  name="value-radio"
+                                  value="value-3"
+                                />
+                                <input
+                                  class="star s4"
+                                  type="radio"
+                                  id="value-4"
+                                  name="value-radio"
+                                  value="value-4"
+                                />
+                                <input
+                                  class="star s5"
+                                  type="radio"
+                                  id="value-5"
+                                  name="value-radio"
+                                  value="value-5"
+                                />
+                              </div>
+                        </div>
+                        <div class="face back-face">
+                            <span class="fas fa-quote-left"></span>
+                            <div class="testimonial">
+                              
+        طلب ساعه ومعاها وحده هديه وربي فخمههه مرررا وتجنن واحلى من الصوره الله يسعدهم روحهم طيبه والتوصيل ما طول وكل شي حلو الله يسعدهم يارب🤍🤍🤍😍
+                            </div>
+                            <span class="fas fa-quote-right"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card">
+                        <div class="face front-face">
+                            <img src="https://images.unsplash.com/photo-1614574762522-6ac2fbba2208?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MjY2fHxtYW58ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                                alt="" class="profile">
+                            <div class="pt-3 text-uppercase name">
+                               يحيي مازن
+                            </div>
+                            <div class="radio-input">
+                                <input
+                                  class="star s1"
+                                  type="radio"
+                                  id="value-1"
+                                  name="value-radio"
+                                  value="value-1"
+                                />
+                                <input
+                                  class="star s2"
+                                  type="radio"
+                                  id="value-2"
+                                  name="value-radio"
+                                  value="value-2"
+                                />
+                                <input
+                                  class="star s3"
+                                  type="radio"
+                                  id="value-3"
+                                  name="value-radio"
+                                  value="value-3"
+                                />
+                                <input
+                                  class="star s4"
+                                  type="radio"
+                                  id="value-4"
+                                  name="value-radio"
+                                  value="value-4"
+                                />
+                                <input
+                                  class="star s5"
+                                  type="radio"
+                                  id="value-5"
+                                  name="value-radio"
+                                  value="value-5"
+                                />
+                              </div>
+                          
+                        </div>
+                        <div class="face back-face">
+                            <span class="fas fa-quote-left"></span>
+                            <div class="testimonial">
+                                الساعات تجنن انصح بشرائها واسعارها مرة مناسبة وكمان العلب فخمة تصلح تهدوها لأحبائكم ،، والعطورات حقهم مرررة حلوة وثبات عالي ،، بشكل عام المتجر مرة كويس وخدمة ممتازة شكرا لكم ❤☺👋
+                            </div>
+                            <span class="fas fa-quote-right"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br>
+    
+        <div class="container">
+          <div class="row  g-4">
+              <div class="col-md-4 col-lg-3 col-sm-6 col-xs-12">
+                <div class="card1">
+                  
+                  <div class="card-body">
+                      <i class="fa-solid fa-truck-fast" style="font-size: 30px;"></i>
+                      <br><br><br>
+                    <h5 class="card-title">الشحن</h5>
+                    <br>
+                    <p class="card-text">نحرص على أن يصلك طلبك بأقصى سرعة ✔
+                  </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-lg-3 col-sm-6 col-xs-12">
+                <div class="card1">
+                
+                  <div class="card-body">
+                      <i class="fa-solid fa-ranking-star" style="font-size: 30px;"></i>
+                      <br> <br><br>
+                    <h5 class="card-title"> الجودة العالية</h5>
+                    <br>
+                    <p class="card-text">
+                      جميع منتجاتنا نوفرها لك بأعلى جودة وفخامة ✔</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-lg-3 col-sm-6 col-xs-12">
+                <div class="card1">
+                  
+                  
+                  <div class="card-body">
+                      <i class="fa-solid fa-money-check-dollar" style="font-size: 30px;"></i>
+                      <br> <br><br>
+                    <h5 class="card-title">الأسعار</h5>
+                    <br>
+                    <p class="card-text">عروض وتخفيضات مستمرة ✔</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-lg-3 col-sm-6 col-xs-12">
+                <div class="card1">
+                  <div class="card-body">
+                      <i class="fa-solid fa-phone" style="font-size: 30px;"></i>
+                      <br><br><br>
+                    <h5 class="card-title"> الدعم الفني</h5>
+                    <br>
+                    <p class="card-text">دعم فني جاهز للرد والمساعدة ✔</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+      </div>
+      <br><br><br>
+        <!-- footer -->
+    
+    <div class="page-wrapper">
+        <div id="waterdrop"></div>
+        <footer>
+          <div class="footer-top">
+            <div class="pt-exebar">
+    
+            </div>
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-3 col-md-12 col-sm-12 footer-col-3">
+                    <div class="widget widget_gallery gallery-grid-4">
+                        <h5 class="footer-title">Our Gallery</h5>
+                        <ul class="magnific-image">
+        
+                          <li><a class="magnific-anchor"><img src="images/wa (1).jpeg" alt=""></a></li>
+                          <li><a class="magnific-anchor"><img src="images/wa (11).jpeg" alt=""></a></li>
+                          <li><a class="magnific-anchor"><img src="images/wa (3).jpeg" alt=""></a></li>
+                          <li><a class="magnific-anchor"><img src="images/wa (12).jpeg" alt=""></a></li>
+                          <li><a class="magnific-anchor"><img src="images/wa (5).jpeg" alt=""></a></li>
+                          <li><a class="magnific-anchor"><img src="images/wa (6).jpeg" alt=""></a></li>
+                          <li><a class="magnific-anchor"><img src="images/wa (7).jpeg" alt=""></a></li>
+                          <li><a class="magnific-anchor"><img src="images/wa (8).jpeg" alt=""></a></li>
+                          <li><a class="magnific-anchor"><img src="images/wa (9).jpeg" alt=""></a></li>
+                        
+                        </ul>
+                      </div>
+    
+                </div>
+                <div class="col-12 col-lg-6 col-md-6 col-sm-12">
+                  <div class="row">
+                    <div class="col-6 col-lg-6 col-md-6 col-sm-6">
+                      <div class="widget footer_widget">
+                        <h5 class="footer-title">Recent News</h5>
+                        <ul class="posts  styled">
+                          <li class="clearfix gem-pp-posts">
+                            <div class="gem-pp-posts-text">
+                              <div class="gem-pp-posts-item">
+                                <a href="#">Want to start Your Own Play School.
+                                </a>
+                              </div>
+                              <div class="gem-pp-posts-date">Call +967774254881</div>
+                            </div>
+                          </li>
+                          <li class="clearfix gem-pp-posts">
+                            <div class="gem-pp-posts-text">
+                              <div class="gem-pp-posts-item">
+                                <a href="#">Now we are in Faridabad,Now we are in DaudNagar.
+                                </a>
+                              </div>
+                              <div class="gem-pp-posts-date">Call +967774254881</div>
+                            </div>
+                          </li>
+                          <li class="clearfix gem-pp-posts">
+                            <div class="gem-pp-posts-text">
+                              <div class="gem-pp-posts-item">
+                                <a href="">Now we are in Ranchi, Admission open
+                                </a>
+                              </div>
+                              <div class="gem-pp-posts-date">Call +967774254881</div>
+                            </div>
+                          </li>
+    
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-6 col-lg-6 col-md-6 col-sm-6">
+                      <div class="widget">
+                        <h5 class="footer-title">Email Us</h5>
+                        <div class="textwidget">
+                          <div role="form" class="wpcf7" id="wpcf7-f4-o1" lang="en-US" dir="ltr">
+    
+                            <form method="post" class="wpcf7-form" novalidate="novalidate">
+    
+                              <div class="contact-form-footer">
+                                <p><span class="wpcf7-form-control-wrap your-first-name"><input type="text" name="your-first-name" value="" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false" placeholder="Your name"></span></p>
+                                <p><span class="wpcf7-form-control-wrap your-email_1"><input type="email" name="your-email_1" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-email" aria-invalid="false" placeholder="Your email"></span></p>
+                                <p><span class="wpcf7-form-control-wrap your-message"><textarea name="your-message" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea" aria-invalid="false" placeholder="Your message"></textarea></span></p>
+                                <div><input type="submit" value="Send" class="wpcf7-form-control wpcf7-submit"><span class="ajax-loader"></span></div>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-3 col-md-5 col-sm-12 footer-col-4">
+                  <div class="widget widget_gallery gallery-grid-4">
+                    <h5 class="footer-title">Our Gallery</h5>
+                    <ul class="magnific-image">
+    
+                        <li><a class="magnific-anchor"><img src="images/wa (13).jpeg" alt=""></a></li>
+                        <li><a class="magnific-anchor"><img src="images/wa (14).jpeg" alt=""></a></li>
+                        <li><a class="magnific-anchor"><img src="images/wa (15).jpeg" alt=""></a></li>
+                        <li><a class="magnific-anchor"><img src="images/wa (16).jpeg" alt=""></a></li>
+                        <li><a class="magnific-anchor"><img src="images/wa (17).jpeg" alt=""></a></li>
+                        <li><a class="magnific-anchor"><img src="images/wa (22).jpeg" alt=""></a></li>
+                        <li><a class="magnific-anchor"><img src="images/wa (19).jpeg" alt=""></a></li>
+                        <li><a class="magnific-anchor"><img src="images/wa (23).jpeg" alt=""></a></li>
+                        <li><a class="magnific-anchor"><img src="images/wa (24).jpeg" alt=""></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+         
+        </footer>
+      </div>
+        <script>
+
+
+const data = [
+    {
+      id: 1,
+      name: "ساعة رجالية باللون الفضي والأخضر شبيهة رولكس",
+      img: "images/wa (1).jpeg",
+      amt:"127"
+    },
+    {
+      id: 2,
+      name: "ساعة رجالية شبيهة  باللون الفضي والكحلي",
+      img: "images/wa (2).jpeg",
+      amt:"127",
+      color: "Naviblue",
+    },
+    {
+      id: 3,
+      name: " ساعة رجالية شبيهة  باللون  الذهبي والفضي والكحلي",
+      
+      img:"images/wa (3).jpeg",
+      amt:"127",
+     
+      color: "Naviblue",
+    },
+    {
+      id: 4,
+      name: " ساعة رجالية شبيهة  باللون   الاسود والذهبي والفضي والكحلي",
+      img: "images/wa (12).jpeg",
+      amt:"127",
+    
+      color: "Naviblue",
+    },
+    {
+      id: 5,
+      name: " ساعة رجالية شبيهة  باللون   الاسود والذهبي والفضي والكحلي",
+      img: "images/wa (11).jpeg",
+      amt:"127",
+      
+      color: "Naviblue",
+    },
+    {
+      id: 6,
+      name: " ساعة رجالية شبيهة  باللون   الاسود والذهبي والفضي والكحلي",
+      img: "images/wa (6).jpeg",
+      amt:"127",
+      
+      color: "Naviblue",
+    },
+    {
+      id: 7,
+      name: " ساعة رجالية شبيهة  باللون   الاسود والذهبي والفضي والكحلي",
+      img: "images/wa (7).jpeg",
+      amt:"127",
+    
+      color: "Naviblue",
+    },
+    {
+      id: 8,
+      name: " ساعة رجالية شبيهة  باللون   الاسود والذهبي والفضي والكحلي",
+      img: "images/wa (8).jpeg",
+      amt:"127",
+      
+      
+    },
+    {
+      id: 9,
+      name: " ساعة رجالية شبيهة  باللون   الاسود والذهبي والفضي والكحلي",
+      img: "images/wa (9).jpeg",
+      amt:"127",
+      
+    },
+    {
+        id: 10,
+        name: " ساعة رجالية شبيهة  باللون   الاسود والذهبي والفضي والكحلي",
+        img: "images/wa (13).jpeg",
+        amt:"127",
+        color: "Naviblue",
+      },
+      {
+        id: 11,
+        name: " ساعة رجالية شبيهة  باللون   الاسود والذهبي والفضي والكحلي",
+        img: "images/wa (14).jpeg",
+        amt:"127",
+        color: "Naviblue",
+      },
+      {
+        id: 12,
+        name: " ساعة رجالية شبيهة  باللون   الاسود والذهبي والفضي والكحلي",
+        img: "images/wa (15).jpeg",
+        amt:"127",
+        color: "Naviblue",
+      },
+      {
+        id: 13,
+        name: " ساعة رجالية شبيهة  باللون   الاسود والذهبي والفضي والكحلي",
+        img: "images/wa (16).jpeg",
+        amt:"127",
+        color: "Naviblue",
+      },
+      {
+        id: 14,
+        name: " ساعة رجالية شبيهة  باللون   الاسود والذهبي والفضي والكحلي",
+        img: "images/wa (17).jpeg",
+        amt:"127",
+        color: "Naviblue",
+      },
+      {
+        id: 15,
+        name: " ساعة رجالية شبيهة  باللون   الاسود والذهبي والفضي والكحلي",
+        img: "images/wa (19).jpeg",
+        amt:"127",
+        color: "Naviblue",
+      },
+      {
+        id: 16,
+        name: " ساعة رجالية شبيهة  باللون   الاسود والذهبي والفضي والكحلي",
+        img: "images/wa (20).jpeg",
+        amt:"127",
+        color: "Naviblue",
+      },
+      {
+        id: 17,
+        name: " ساعة رجالية شبيهة  باللون   الاسود والذهبي والفضي والكحلي",
+        img: "images/wa (22).jpeg",
+        amt:"127",
+        color: "Naviblue",
+      },
+
+     {
+      id: 18,
+      name: "ساعة رجالية باللون الفضي والأخضر شبيهة رولكس",
+      img: "images/wa (23).jpeg",
+      amt:"127",
+    },
+    {
+      id: 19,
+      name: "ساعة رجالية شبيهة  باللون الفضي والكحلي",
+      img: "images/wa (24).jpeg",
+      amt:"127",
+     
+      color: "Naviblue",
+    },
+    {
+      id: 20,
+      name: " ساعة رجالية شبيهة  باللون  الذهبي والفضي والكحلي",
+      
+      img:"images/wa (25).jpeg",
+      amt:"127",
+     
+      color: "Naviblue",
+    },
+    {
+      id: 21,
+      name: " ساعة رجالية شبيهة  باللون   الاسود والذهبي والفضي والكحلي",
+      img: "images/wa (26).jpeg",
+      amt:"127",
+    
+      color: "Naviblue",
+    },
+    {
+      id: 22,
+      name: " ساعة رجالية شبيهة  باللون   الاسود والذهبي والفضي والكحلي",
+      img: "images/wa (27).jpeg",
+      amt:"127",
+      color: "Naviblue",
+    },
+    {
+      id: 23,
+      name: " ساعة رجالية شبيهة  باللون   الاسود والذهبي والفضي والكحلي",
+      img: "images/wa (28).jpeg",
+      amt:"127",
+      
+      color: "Naviblue",
+    },
+    {
+      id: 24,
+      name: " ساعة رجالية شبيهة  باللون   الاسود والذهبي والفضي والكحلي",
+      img: "images/wa (29).jpeg",
+      amt:"127",
+    
+      color: "Naviblue",
+    },
+    {
+      id: 25,
+      name: " ساعة رجالية شبيهة  باللون   الاسود والذهبي والفضي والكحلي",
+      img: "images/wa (30).jpeg",
+      amt:"127",
+      
+    },
+    {
+      id: 26,
+      name: " ساعة رجالية شبيهة  باللون   الاسود والذهبي والفضي والكحلي",
+      img: "images/wa (31).jpeg",
+      amt:"127",
+      
+    },
+    {
+        id: 27,
+        name: " ساعة رجالية شبيهة  باللون   الاسود والذهبي والفضي والكحلي",
+        img: "images/wa (32).jpeg",
+        amt:"127",
+        color: "Naviblue",
+      },
+      {
+        id: 28,
+        name: " ساعة رجالية شبيهة  باللون   الاسود والذهبي والفضي والكحلي",
+        img: "images/wa (33).jpeg",
+        amt:"127",
+        color: "Naviblue",
+      },
+      {
+        id: 29,
+        name: " ساعة رجالية شبيهة  باللون   الاسود والذهبي والفضي والكحلي",
+        img: "images/wa (34).jpeg",
+        amt:"127",
+        color: "Naviblue",
+      },
+      {
+        id: 30,
+        name: " ساعة رجالية شبيهة  باللون   الاسود والذهبي والفضي والكحلي",
+        img: "images/wa (35).jpeg",
+        amt:"127",
+        color: "Naviblue",
+      },
+      {
+        id: 31,
+        name: " ساعة رجالية شبيهة  باللون   الاسود والذهبي والفضي والكحلي",
+        img: "images/wa (36).jpeg",
+        amt:"127",
+        color: "Naviblue",
+      },
+      {
+        id: 32,
+        name: " ساعة رجالية شبيهة  باللون   الاسود والذهبي والفضي والكحلي",
+        img: "images/wa (37).jpeg",
+        amt:"127",
+        color: "Naviblue",
+      },
+      {
+        id: 33,
+        name: " ساعة رجالية شبيهة  باللون   الاسود والذهبي والفضي والكحلي",
+        img: "images/wa (38).jpeg",
+        amt:"127",
+        color: "Naviblue",
+      },
+      {
+        id: 34,
+        name: " ساعة رجالية شبيهة  باللون   الاسود والذهبي والفضي والكحلي",
+        img: "images/wa (39).jpeg",
+        amt:"127",
+        color: "Naviblue",
+      },
+      {
+        id: 36,
+        name: "ساعة رجالية باللون الفضي والأخضر شبيهة رولكس",
+        img: "images/wa (40).jpeg",
+        amt:"127",
+      },
+      {
+        id: 37,
+        name: "ساعة رجالية شبيهة  باللون الفضي والكحلي",
+        img: "images/wa (41).jpeg",
+        amt:"127",
+       
+        color: "Naviblue",
+      },
+      {
+        id: 38,
+        name: " ساعة رجالية شبيهة  باللون  الذهبي والفضي والكحلي",
+        
+        img:"images/wa (42).jpeg",
+        amt:"127",
+       
+        color: "Naviblue",
+      },
+      {
+        id: 39,
+        name: " ساعة رجالية شبيهة  باللون   الاسود والذهبي والفضي والكحلي",
+        img: "images/wa (43).jpeg",
+        amt:"127",
+      
+        color: "Naviblue",
+      },
+      {
+        id: 40,
+        name: " ساعة رجالية شبيهة  باللون   الاسود والذهبي والفضي والكحلي",
+        img: "images/wa (44).jpeg",
+        amt:"127",
+        
+        color: "Naviblue",
+      },
+      {
+        id: 41,
+        name: " ساعة رجالية شبيهة  باللون   الاسود والذهبي والفضي والكحلي",
+        img: "images/wa (45).jpeg",
+        amt:"127",
+        
+        color: "Naviblue",
+      },
+      {
+        id: 42,
+        name: " ساعة رجالية شبيهة  باللون   الاسود والذهبي والفضي والكحلي",
+        img: "images/wa (46).jpeg",
+        amt:"127",
+      
+        color: "Naviblue",
+      },
+      {
+        id: 43,
+        name: " ساعة رجالية شبيهة  باللون   الاسود والذهبي والفضي والكحلي",
+        img: "images/wa (47).jpeg",
+        amt:"127",
+        
+        
+      },
+      {
+        id: 44,
+        name: " ساعة رجالية شبيهة  باللون   الاسود والذهبي والفضي والكحلي",
+        img: "images/wa (48).jpeg",
+        amt:"127",
+        
+      },
+      {
+          id: 45,
+          name: " ساعة رجالية شبيهة  باللون   الاسود والذهبي والفضي والكحلي",
+          img: "images/wa (49).jpeg",
+          amt:"127",
+          color: "Naviblue",
+        },
+        {
+          id: 46,
+          name: " ساعة رجالية شبيهة  باللون   الاسود والذهبي والفضي والكحلي",
+          img: "images/wa (50).jpeg",
+          amt:"127",
+          color: "Naviblue",
+        },
+        {
+          id: 47,
+          name: " ساعة رجالية شبيهة  باللون   الاسود والذهبي والفضي والكحلي",
+          img: "images/wa (51).jpeg",
+          amt:"127",
+          color: "Naviblue",
+        },
+        {
+          id: 48,
+          name: " ساعة رجالية شبيهة  باللون   الاسود والذهبي والفضي والكحلي",
+          img: "images/wa (52).jpeg",
+          amt:"127",
+          color: "Naviblue",
+        },
+        {
+          id: 49,
+          name: " ساعة رجالية شبيهة  باللون   الاسود والذهبي والفضي والكحلي",
+          img: "images/wa (53).jpeg",
+          amt:"127",
+          color: "Naviblue",
+        },
+        {
+          id: 50,
+          name: " ساعة رجالية شبيهة  باللون   الاسود والذهبي والفضي والكحلي",
+          img: "images/wa (54).jpeg",
+          amt:"127",
+          color: "Naviblue",
+        },
+        {
+          id: 51,
+          name: " ساعة رجالية شبيهة  باللون   الاسود والذهبي والفضي والكحلي",
+          img: "images/wa (55).jpeg",
+          amt:"127",
+          color: "Naviblue",
+        },
+        {
+          id: 52,
+          name: " ساعة رجالية شبيهة  باللون   الاسود والذهبي والفضي والكحلي",
+          img: "images/wa (56).jpeg",
+          amt:"127",
+          color: "Naviblue",
+        },
+        {
+            id: 53,
+            name: "ساعة رجالية باللون الفضي والأخضر شبيهة رولكس",
+            img: "images/wa (57).jpeg",
+            amt:"127",
+          },
+          {
+            id: 54,
+            name: "ساعة رجالية شبيهة  باللون الفضي والكحلي",
+            img: "images/wa (58).jpeg",
+            amt:"127",
+           
+            color: "Naviblue",
+          },
+          {
+            id: 55,
+            name: " ساعة رجالية شبيهة  باللون  الذهبي والفضي والكحلي",
+            
+            img:"images/wa (59).jpeg",
+            amt:"127",
+           
+            color: "Naviblue",
+          },
+          {
+            id: 56,
+            name: " ساعة رجالية شبيهة  باللون   الاسود والذهبي والفضي والكحلي",
+            img: "images/wa (60).jpeg",
+            amt:"127",
+          
+            color: "Naviblue",
+          },
+          {
+            id: 57,
+            name: " ساعة رجالية شبيهة  باللون   الاسود والذهبي والفضي والكحلي",
+            img: "images/wa (61).jpeg",
+            amt:"127",
+            
+            color: "Naviblue",
+          },
+          {
+            id: 58,
+            name: " ساعة رجالية شبيهة  باللون   الاسود والذهبي والفضي والكحلي",
+            img: "images/wa (62).jpeg",
+            amt:"127",
+            
+            color: "Naviblue",
+          },
+          {
+            id: 59,
+            name: " ساعة رجالية شبيهة  باللون   الاسود والذهبي والفضي والكحلي",
+            img: "images/wa (63).jpeg",
+            amt:"127",
+          
+            color: "Naviblue",
+          },
+          {
+            id: 60,
+            name: " ساعة رجالية شبيهة  باللون   الاسود والذهبي والفضي والكحلي",
+            img: "images/wa (64).jpeg",
+            amt:"127",
+            
+            
+          },
+          {
+            id: 61,
+            name: " ساعة رجالية شبيهة  باللون   الاسود والذهبي والفضي والكحلي",
+            img: "images/wa (65).jpeg",
+            amt:"127",
+            
+          },
+          {
+              id: 62,
+              name: " ساعة رجالية شبيهة  باللون   الاسود والذهبي والفضي والكحلي",
+              img: "images/wa (66).jpeg",
+              amt:"127",
+              color: "Naviblue",
+            },
+            {
+              id: 63,
+              name: " ساعة رجالية شبيهة  باللون   الاسود والذهبي والفضي والكحلي",
+              img: "images/wa (67).jpeg",
+              amt:"127",
+              color: "Naviblue",
+            },
+            {
+              id: 64,
+              name: " ساعة رجالية شبيهة  باللون   الاسود والذهبي والفضي والكحلي",
+              img: "images/wa (68).jpeg",
+              amt:"127",
+              color: "Naviblue",
+            },
+            {
+              id: 65,
+              name: " ساعة رجالية شبيهة  باللون   الاسود والذهبي والفضي والكحلي",
+              img: "images/wa (69).jpeg",
+              amt:"127",
+              color: "Naviblue",
+            },
+            {
+              id: 66,
+              name: " ساعة رجالية شبيهة  باللون   الاسود والذهبي والفضي والكحلي",
+              img: "images/wa (70).jpeg",
+              amt:"127",
+              color: "Naviblue",
+            },
+            {
+              id: 67,
+              name: " ساعة رجالية شبيهة  باللون   الاسود والذهبي والفضي والكحلي",
+              img: "images/wa (71).jpeg",
+              amt:"127",
+              color: "Naviblue",
+            },
+            {
+              id: 68,
+              name: " ساعة رجالية شبيهة  باللون   الاسود والذهبي والفضي والكحلي",
+              img: "images/wa (72).jpeg",
+              amt:"127",
+              color: "Naviblue",
+            },
+            {
+              id: 69,
+              name: " ساعة رجالية شبيهة  باللون   الاسود والذهبي والفضي والكحلي",
+              img: "images/wa (73).jpeg",
+              amt:"127",
+              color: "Naviblue",
+            },
+            {
+                id: 70,
+                name: "ساعة رجالية باللون الفضي والأخضر شبيهة رولكس",
+                img: "images/wa (74).jpeg",
+                amt:"127",
+              },
+              {
+                id: 71,
+                name: "ساعة رجالية شبيهة  باللون الفضي والكحلي",
+                img: "images/wa (75).jpeg",
+                amt:"127",
+               
+                color: "Naviblue",
+              },
+              {
+                id: 72,
+                name: " ساعة رجالية شبيهة  باللون  الذهبي والفضي والكحلي",
+                
+                img:"images/wa (76).jpeg",
+                amt:"127",
+               
+                color: "Naviblue",
+              },
+              {
+                id: 73,
+                name: " ساعة رجالية شبيهة  باللون   الاسود والذهبي والفضي والكحلي",
+                img: "images/wa (77).jpeg",
+                amt:"127",
+              
+                color: "Naviblue",
+              },
+              {
+                id: 74,
+                name: " ساعة رجالية شبيهة  باللون   الاسود والذهبي والفضي والكحلي",
+                img: "images/wa (79).jpeg",
+                amt:"127",
+                
+                color: "Naviblue",
+              },
+              {
+                id: 75,
+                name: " ساعة رجالية شبيهة  باللون   الاسود والذهبي والفضي والكحلي",
+                img: "images/wa (80).jpeg",
+                amt:"127",
+                color: "Naviblue",
+              },
+              {
+                id: 76,
+                name: " ساعة رجالية شبيهة  باللون   الاسود والذهبي والفضي والكحلي",
+                img: "images/wa (81).jpeg",
+                amt:"127",
+                color: "Naviblue",
+              },
+              {
+                id: 77,
+                name: " ساعة رجالية شبيهة  باللون   الاسود والذهبي والفضي والكحلي",
+                img: "images/wa (82).jpeg",
+                amt:"127",
+                
+                
+              },
+              {
+                id: 78,
+                name: " ساعة رجالية شبيهة  باللون   الاسود والذهبي والفضي والكحلي",
+                img: "images/wa (83).jpeg",
+                amt:"127",
+                
+              },
+              {
+                  id: 79,
+                  name: " ساعة رجالية شبيهة  باللون   الاسود والذهبي والفضي والكحلي",
+                  img: "images/wa (84).jpeg",
+                  amt:"127",
+                  color: "Naviblue",
+                },
+                {
+                  id: 80,
+                  name: " ساعة رجالية شبيهة  باللون   الاسود والذهبي والفضي والكحلي",
+                  img: "images/wa (85).jpeg",
+                  amt:"127",
+                  color: "Naviblue",
+                },
+                {
+                  id: 81,
+                  name: " ساعة رجالية شبيهة  باللون   الاسود والذهبي والفضي والكحلي",
+                  img: "images/wa (86).jpeg",
+                  amt:"127",
+                  color: "Naviblue",
+                },
+
+
+
+            ];
+
+
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const productId = getProductIdFromUrl();
+    const product = getProductById(productId);
+
+    if (product) {
+        displayProductDetails(product);
+    } else {
+        // Handle the case when the product is not found
+        console.error("Product not found");
+    }
+});
+
+function getProductIdFromUrl() {
+    const urlParams = new URLSearchParams(window.location.search);
+    return parseInt(urlParams.get("id"));
+}
+
+function getProductById(productId) {
+    return data.find(product => product.id === productId);
+}
+
+function displayProductDetails(product) {
+    const productDetailsContainer = document.getElementById("root");
+    productDetailsContainer.innerHTML = `
+    <div class='box'>
+        <div class='img-box'>
+            <img class='images' src='${product.img}' alt='${product.name}'>
+        </div>
+        <div class='bottom'>
+            <p>${product.name}</p>
+            <h2>${product.amt}ريال</h2>
+            <button onclick='addToCart(${product.id})'>اضف الي السله</button>
+        </div>
+    </div>`;
+}
+
+
+function openWhatsApp() {
+  // Recipient's phone number
+  var phoneNumber = '+967774254881'; // Replace this with the recipient's actual phone number
+
+  // Message you want to send
+  var message = encodeURIComponent('السلام عليكم كم سعر التوصيل ؟');
+
+  // Create the WhatsApp share link with both phone number and message
+  var whatsappLink = 'https://wa.me/' + phoneNumber + '?text=' + message;
+
+  // Open the WhatsApp link in a new tab
+  window.open(whatsappLink, '_blank');
+}
+
+
+var cart = [];
+
+function addToCart(productId) {
+    const selectedProduct = getProductById(productId);
+    cart.push(selectedProduct);
+    
+    displayCart();
+}
+
+function delElement(index) {
+    cart.splice(index, 1);
+    displayCart();
+}
+
+function displayCart() {
+    let total = 0;
+    document.getElementById("count").innerHTML = cart.length;
+    if (cart.length === 0) {
+        document.getElementById('cartItem').innerHTML = "Your cart is empty";
+        
+        document.getElementById("total").innerHTML = "﷼ " + 0 + ".00";
+    } else {
+        document.getElementById("cartItem").innerHTML = cart.map((items, index) => {
+            const { img, name, amt } = data.find(product => product.id === items.id);
+           
+            total += parseInt(amt);
+     
+            document.getElementById("total").innerHTML = total + '﷼"';
+            return `
+                <div class='cart-item'>
+                    <div class='row-img'>
+                        <img class='rowimg' src='${img}'alt ='${name}'>
+                       
+                    </div>
+                    <p style='font-size:12px;'>${name}</p>
+                    <h2 style='font-size: 15px;'> ${amt}.00</h2>
+                    <i class='fa-solid fa-trash' onclick='delElement(${index})'></i>
+                </div>`;
+        }).join('');
+    }
+}
+
+function getProductById(productId) {
+    
+                return data.find(product => product.id === productId);
+            }
+
+
+
+
+
+           
+        </script>
+
+
+<script src="js/jquery-3.7.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="lib/owlcarousel/owl.carousel.min.js"></script>
+<script src="js/bootstrap.bundle.js"></script>
+
+<script src="js/script.js"></script>
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+var swiper = new Swiper('.swiper-container', {
+  slidesPerView: 3,
+  spaceBetween: 20,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="js/watches.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-2O4K9eHfPzvXv0PzrDyU+ad5zX7gg8hPv5bfbPv4Rt17zFCebzFz0nSmedTz28nx" crossorigin="anonymous"></script>
+
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    </body>
+</html>

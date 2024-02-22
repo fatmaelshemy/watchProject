@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login page</title>
+
+    <!--? STYLE-->
+    <link rel="stylesheet" href="css/all.min.css">
+   <link rel="stylesheet" href="css/bootstrap.min.css">
+   <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+       <!-- ══════════════════▶ Start Project ◀═══════════════════════ -->
+       <div id="log&reg" class="container-fluid position-relative ">
+        <div class="row min-vh-100 justify-content-center align-items-center">
+         <!--* ═══════════▶  Image in login & signup ◀════════════ -->
+        <div class="photo col-md-5 pb-5 d-lg-flex flex-lg-column">
+            <div class="img-container">
+                <img src="images/تسجيل الدخول.jpg" class="w-75 h-75" alt="">
+            </div>
+        </div>
+
+        <!--* ════════════▶  Content in login & signup ◀══════════════ -->
+        <div class="col-md-8 col-lg-4 ">
+            <div class="content">
+  
+              <div id="parent"  class="px-3 px-lg-4 w-100 d-flex flex-column gap-4">
+                 <!--? ════▶ LOGIN content ◀═══════ -->
+                 <div id="login" class="d-flex flex-column gap-4  ">
+                
+                   <h1 class="mb-3">تسجيل الدخول</h1>
+              <!--* ═════════▶ Email ◀═════════ -->
+                   <div>
+
+                    <label class="d-flex justify-content-between fw-semibold mb-1 " style="color: #E78895;" for="emailinput">
+                      الايميل
+                    </label>
+                   
+                    <!--* ═════════▶ Input-Email ◀═════════ -->
+
+                    <input type="text" id="emailinput" class="form-control w-100">
+                 </div>
+            <!--* ═════════▶ Password  ◀══════════ -->
+                 <div>
+                    <label class="d-flex justify-content-between fw-semibold mb-1" style="color: #E78895;" for="passinput">
+                      كلمه السر
+                    
+                    </label>
+                    <!--* ═════════▶ Input-Pass ◀══════════ -->
+                    <input id="passinput"   class="form-control w-100"  type="password">
+                  
+                  </div>
+
+                   <!--^ ══════▶ LOGIN Button ◀═════ -->
+                   <a id="loginbtn" >
+              <button id="btnLogin" onclick="Login()"   class="btn btn-login mt-2 mb-0 fw-semibold">Login</button>
+            </a>
+
+              <span id="createOne" onclick="createAccount()" class="create-one mt-0">
+                 هل تريد انشاء حساب؟  
+                <a class="text-decoration-underline">انشاء حساب  </a>
+              </span>
+                </div>
+                    <!--* ═════════▶ Register ◀═════════ -->
+                <div id="register" class="d-flex flex-column gap-4  d-none ">
+                
+                    <h1 class="mb-3 d-flex justify-content-between align-items-center" style="color: #E78895;">
+                         انشاء حساب جديد
+                        <i onclick="switchfromsignuptologin()" class="fa-solid fs-1 fa-circle-arrow-left"></i>
+                      </h1>  
+
+                      <!--* ═════════▶ Name ◀═════════ -->
+                      <div>
+ 
+                        <label class="d-flex justify-content-between fw-semibold mb-1 " for="nameInput" style="color: #E78895;">
+                          الاسم
+                        </label>
+                       
+                        <!--* ═════════▶ Input-Name ◀═════════ -->
+    
+                        <input type="text" oninput="validationName()" id="nameInput" class="form-control w-100">
+                    </div>
+                     <!--* ═════════▶ Email ◀═════════ -->
+                    <div>
+ 
+                     <label class="d-flex justify-content-between fw-semibold mb-1 " for="emailInput" style="color: #E78895;">
+                       الايميل
+                     </label>
+                    
+                     <!--* ═════════▶ Input-Email ◀═════════ -->
+ 
+                     <input type="text" oninput="validationEmail()" id="emailInput" class="form-control w-100">
+                  </div>
+             <!--* ═════════▶ Password  ◀══════════ -->
+                  <div>
+                     <label class="d-flex justify-content-between fw-semibold mb-1" for="passInput" style="color: #E78895;">
+                       كلمه السر
+                      
+                     </label>
+                     <!--* ═════════▶ Input-Pass ◀══════════ -->
+                     <input id="passInput" oninput="validationPass()"  class="form-control w-100"  type="password">
+                   
+                   </div>
+ 
+                    <!--^ ══════▶ signup Button ◀═════ -->
+               <button id="btnSign" onclick="addUser()"  class="btn btn-login mt-2 mb-0 fw-semibold" >Sign Up</button>
+
+                 </div>
+
+    </div>
+  </div>
+
+</div>
+</div>
+</div>
+
+   <!--? Bootstrap -->
+   <script src="js/bootstrap.bundle.min.js"></script>
+  <!--? JavaScript -->
+  <script src="js/login.js"></script>
+  <!--? SweetAlert -->
+  <script src="js/sweetalert2@11.js"></script>
+
+  <script src="js/jquery-3.7.1.min.js"></script>
+
+</body>
+</html>
